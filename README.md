@@ -51,3 +51,15 @@ Kontod on avalikud proovikontod: brauseripoolne sisselogimisvoog ei ole turvalin
 TalTechi logo allikas: https://taltechbasketball.ee/wp-content/uploads/2025/10/TalTechAlexela-2.webp
 
 Sinise Alexela kirjaga TalTechi logo originaal: https://taltechbasketball.ee/wp-content/uploads/2025/12/RankMathSocialShare.webp
+
+## Jagatavad lehed
+
+- Kalevi kalender: https://desulg.github.io/club-fan-calendar/bigbank-kalev/
+- TalTechi kalender: https://desulg.github.io/club-fan-calendar/taltech-alexela/
+- Ideed ja järgmised sammud: https://desulg.github.io/club-fan-calendar/ideas.html
+
+Klubiaadressid on praegu eeldefineeritud suunamislehed. Klubi valitav unikaalne slug ja vana slugi suunamine lisanduvad ühise andmebaasiga. Olemasolevad `?club=kalev` ja `?club=taltech` lingid töötavad edasi.
+
+Mängu pealkiri avab detailvaate. See sisaldab kaardilinki ja kõiki olemasolevaid mänguvälju.
+
+Automaatne kalendritellimus ei ole veel ühendatud: olemasolev .ics on allalaadimine. Plaan on ühine Postgres andmebaas, päris autentimine ja klubipõhine avalik .ics-endpoint. Avalik feed peab säilitama sündmuste UID-d ning korrektse ajavööndi; muudatustel uuendama SEQUENCE/LAST-MODIFIED välju. Püsiv tellimislink peab olema slugist sõltumatu. Kalenderklient määrab värskendamise sageduse ja teavituste käitumise.
