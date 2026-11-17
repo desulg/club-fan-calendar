@@ -34,3 +34,18 @@ Haldusvaate võistkonna seadetes saab muuta nime, värve ja üles laadida logo. 
 Mängul saab määrata lisainfo, piletihinna, piletiviite ja teavituse kellaaja (vaikimisi 10.00). Loetelus on tulevaste ja varasemate mängude vaated. Esialgsed mängud on illustratiivsed, mitte klubi kinnitatud ajakava.
 
 Kontrollid: `node --check app.js` ja `node tests/calendar.cjs`.
+
+## Proovikontod
+
+Sisselogimine: https://desulg.github.io/club-fan-calendar/login.html
+
+| Klubi | Kasutajanimi | Parool |
+| --- | --- | --- |
+| Bigbank Kalev | kalev | Kalev2026! |
+| TalTech/ALEXELA | taltech | Taltech2026! |
+
+Avalikud fännivaated: `index.html?club=kalev` ja `index.html?club=taltech`.
+
+Kontod on avalikud proovikontod: brauseripoolne sisselogimisvoog ei ole turvaline serveripoolne autentimine. Kasuta ainult testandmeid. Sessioon on tabipõhine (sessionStorage); mängud ja kujundus säilivad brauseris klubiti eraldi. Teises brauseris või seadmes muudatused ei ilmu. Paroolid on tahtlikult avalikud ega kaitse andmeid.
+
+TalTechi logo allikas: https://taltechbasketball.ee/wp-content/uploads/2025/10/TalTechAlexela-2.webp

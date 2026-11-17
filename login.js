@@ -1,0 +1,5 @@
+const form=document.querySelector('#loginForm');
+const credentials={kalev:'Kalev2026!',taltech:'Taltech2026!'};
+document.querySelectorAll('[data-account]').forEach(button=>button.onclick=()=>{form.elements.username.value=button.dataset.account;form.elements.password.value=credentials[button.dataset.account];document.querySelector('#loginError').hidden=true;form.querySelector('[type=submit]').focus()});
+form.onsubmit=e=>{e.preventDefault();try{if(DemoAuth.login(form.elements.username.value,form.elements.password.value)){location.assign('index.html');return}document.querySelector('#loginError').hidden=false}catch{document.querySelector('#loginError').textContent='Luba selle lehe brauserisalvestus ja proovi uuesti.';document.querySelector('#loginError').hidden=false}};
+document.querySelector('#showPassword').onclick=e=>{const input=form.elements.password,show=input.type==='password';input.type=show?'text':'password';e.target.textContent=show?'Peida':'Näita';e.target.setAttribute('aria-label',show?'Peida parool':'Näita parooli')};
