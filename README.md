@@ -49,3 +49,5 @@ Avalikud fännivaated: `index.html?club=kalev` ja `index.html?club=taltech`.
 Kontod on avalikud proovikontod: brauseripoolne sisselogimisvoog ei ole turvaline serveripoolne autentimine. Kasuta ainult testandmeid. Sessioon on tabipõhine (sessionStorage); mängud ja kujundus säilivad brauseris klubiti eraldi. Teises brauseris või seadmes muudatused ei ilmu. Paroolid on tahtlikult avalikud ega kaitse andmeid.
 
 TalTechi logo allikas: https://taltechbasketball.ee/wp-content/uploads/2025/10/TalTechAlexela-2.webp
+
+Sinise Alexela kirjaga TalTechi logo originaal: https://taltechbasketball.ee/wp-content/uploads/2025/12/RankMathSocialShare.webp

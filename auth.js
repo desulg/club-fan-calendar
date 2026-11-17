@@ -2,7 +2,7 @@
 const DemoAuth = (() => {
   const teams = {
     kalev: {name:'Bigbank Kalev', primary:'#044771', accent:'#044771', logo:'assets/bigbank-kalev.svg'},
-    taltech: {name:'TalTech/ALEXELA', primary:'#34233f', accent:'#aa1352', logo:'assets/taltech-alexela.webp'}
+    taltech: {name:'TalTech/ALEXELA', primary:'#34233f', accent:'#aa1352', logo:'assets/taltech-alexela-blue.webp'}
   };
   const accounts = {kalev:'Kalev2026!', taltech:'Taltech2026!'};
   function session(){try{const id=sessionStorage.getItem('calendar-demo-session');return Object.hasOwn(teams,id)?id:null}catch{return null}}
